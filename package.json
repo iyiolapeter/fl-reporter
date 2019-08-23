@@ -1,0 +1,37 @@
+{
+  "name": "fl-reporter",
+  "version": "1.0.0",
+  "description": "A simple message/error reporter to different sources with default slack integration",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "Peter Iyiola",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash.startcase": "^4.4.6",
+    "husky": "^2.2.0",
+    "prettier": "^1.17.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@slack/client": "^5.0.1",
+    "lodash.startcase": "^4.4.0"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm run format && npm run build"
+    }
+  }
+}
