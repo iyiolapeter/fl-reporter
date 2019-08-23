@@ -16,14 +16,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/lodash.startcase": "^4.4.6",
-    "husky": "^2.2.0",
-    "prettier": "^1.17.0",
-    "tslint": "^5.16.0",
+    "husky": "^2.7.0",
+    "prettier": "^1.18.2",
+    "tslint": "^5.19.0",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.4.5"
+    "typescript": "^3.5.3"
   },
   "dependencies": {
-    "@slack/client": "^5.0.1",
+    "@slack/client": "^5.0.2",
     "lodash.startcase": "^4.4.0"
   },
   "files": [
